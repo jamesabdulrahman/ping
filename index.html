@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'/>
+<title>Ping</title>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Baumans">
+<style>
+body {
+	margin: 16pt auto;
+	width: 65%;
+	text-align: center;
+}
+canvas#game_screen {
+	margin: auto;
+	background-color: black;
+}
+table {
+	margin: auto;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<audio id='blip' preload='auto'>
+	<source src='blip.ogg'/>
+</audio>
+<audio id='win' preload='auto'>
+	<source src='win.ogg'/>
+</audio>
+<canvas id='game_screen' width='640' height='480'>Your browser seems to be old and crummy. You need one that supports HTML 5.</canvas>
+<section>
+<p>This is Ping, which for legal reasons, is nothing like a certain game that is a trademark of Atari SA.</p>
+<h2>Controls</h2>
+<table>
+	<tr>
+		<th></th>
+		<th>Player 1</th>
+		<th>Player 2</th>
+	</tr>
+	<tr>
+		<th>Start Game</th>
+		<td colspan='2'>Enter</td>
+	</tr>
+	<th>Up</th>
+	<td>w</td>
+	<td>up arrow</td>
+	</tr>
+	<tr>
+		<th>Down</th>
+		<td>s</td>
+		<td>down arrow</td>
+	</tr>
+	<tr>
+		<th>Serve</th>
+		<td colspan='2'>Space</td>
+	</tr>
+</table>
+</section>
+<script src='constants.js'></script>
+<script src='ping.js'></script>
+</body>
+</html>
